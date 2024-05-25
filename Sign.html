@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="sign.css">
+    <title> Login Page | Social Synergy</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <img src="images\logo.jpeg" alt="Logo">
+        </div>
+        <div class="header-text">
+          <a href="index.html"><h1>Social Synergy: Empowering Connections, Amplifying Impact</h1></a>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Signin BRAND</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="Brand.html" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email" id="namee">
+                <input type="password" placeholder="Password"id="pass">
+                <button onclick="fu1c">Sign in </button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Signin Influencer</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://in.linkedin.com/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <a href="dash.html">Forget Your Password?</a>
+                <button class="submit" onclick="fuc()">
+                    Sign in
+                </button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Hello, Friend!</h1>
+                    <p><b>Want  to  Sign  in  as <br> Influncer!!!!</b></p>
+                    <button class="hidden" id="login"><B>Click Here!!</B></button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p><B>Want to Sign In !!!   as an  <br> Brand!!! </B> </p>
+                    <button class="hidden" id="register"><B>Click Here!!</B></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="sign.js"></script>
+    <script>
+        function fuc(){
+             var email1 = document.getElementById("username").value;
+             var pass1  =  document.getElementById("password").value;
+            if (email1 =='ASM1234@gmail.com' && pass1=='123456'){
+             alert("Successful !!!")
+            window.location.assign("dash.html")   
+            }
+            else{
+                alert("wrong passward/username")
+            }
+        }
+    </script>
+        <script>
+            function fu1c(){
+            window.location.assign("settings.html")
+            }
+        </script>
+
+
+</body>
+
+</html>
